@@ -1,3 +1,5 @@
+/* <!-- None of this my work i didnt get it -->  */
+
 // Declared variables
 var highScore = document.querySelector("#highScore");
 var clear = document.querySelector("#clear");

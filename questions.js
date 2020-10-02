@@ -1,6 +1,6 @@
 //Quiz questions and answers array of questions
 
-
+/* <!-- None of this my work i didnt get it -->  */
 var questions = [
 
     {
