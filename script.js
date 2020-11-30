@@ -1,4 +1,4 @@
-// Array of objects with each object being a new question with question, answer choices, and correct answer associated with it.
+// Array of objects with each object being a new question with answer choices, and correct answer associated with it.
 var questions = [
     new Question("What is the greatest Football club Ever?", ['Manchester United', 'Everton', 'Liverpool', 'Arsenal'], "Manchester United"),
     new Question("Who is the greatest Manager in league History?", ['Sir Alex Ferguson', 'Jürgen Klopp', 'Pep Guardiola', 'José Mourinho'], "Sir Alex Ferguson"),
