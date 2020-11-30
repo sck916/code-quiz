@@ -21,7 +21,7 @@ function setTime() {
         
         timeEl.textContent = secondsLeft + " seconds left!"; 
 
-        // Alert "game over!" on 0 of timer
+        // Alert "GAME OVER!" on 0 of timer
         if(secondsLeft === 0) {
             clearInterval(timerInterval);
             alert("GAME OVER!") 
