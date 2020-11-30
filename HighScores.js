@@ -1,29 +1,9 @@
-/* <!-- None of this my work i didnt get it --> */ 
+const highScoresList = document.getElementById("highScoresList"); 
 
-var highScore = document.querySelector("#highScore");
-var clear = document.querySelector("#clear");
-var goBack = document.querySelector("#goBack");
+const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 
-// Event listener to clear scores 
-clear.addEventListener("click", function () {
-    localStorage.clear();
-    location.reload();
-});
-// Retreives local stroage 
-var allScores = localStorage.getItem("allScores");
-allScores = JSON.parse(allScores);
-
-if (allScores !== null) {
-
-    for (var i = 0; i < allScores.length; i++) {
-
-        var createLi = document.createElement("li");
-        createLi.textContent = allScores[i].initials + " " + allScores[i].score;
-        highScore.appendChild(createLi);
-
-    }
-}
-// Event listener to move to index page
-goBack.addEventListener("click", function () {
-    window.location.replace("./index.html");
-});
+highScoresList.innerHTML = highScores
+    .map(score => {
+    return `<li class="high-score">${score.name} : ${score.score}</li>`;
+    }) 
+    .join("");

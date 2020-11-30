@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Work!</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>    
+        body {
+        background-image: url(https://resources.premierleague.com/photos/2020/03/13/ea2ae5c3-f75b-4681-b9d0-d7ef0126b0e9/Statement_Graphic_PL_FA_EFL_Lilac.png?width=930&height=620);
+        }
+        </style>
+</head>
+<body>
+    <div class="grid">
+        <div id="quiz">
+            <div class="container">
+                <div id="end">
+                    <h1 id="finalScore"></h1>
+                    <h2 id="score"></h2>
+                    <form>
+                        <input  
+                            type="text"
+                            name="username"
+                            id="username"
+                            placeholder="username"
+                        >
+                        <button
+                            type="submit"
+                            class="buttonextra"
+                            id="saveScoreButton"
+                            onclick="saveHighScore(event)"
+                        >
+                        Save Score
+                        </button>
+                        </form>
+                        <a class="tryagainlink" href="./manu.html">You Want To Try Again?</a>
+                    </form>
+                </div>   
+        </div>
+    </div>
+    <script src="end.js"></script>
+</body>
+</html>
